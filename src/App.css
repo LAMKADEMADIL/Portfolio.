@@ -66,10 +66,10 @@ section p {
 }
 .Home{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 85vh;
+  width: 95%;
+
 }
 .About{
   display: flex;
@@ -91,4 +91,88 @@ section p {
   align-items: center;
   justify-content: center;
   height: 85vh;
+}
+@media (max-width: 992px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  section {
+    padding: 60px 30px;
+  }
+
+  section h2 {
+    font-size: 32px;
+  }
+
+  section p {
+    font-size: 17px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  .Home,
+  .About,
+  .Project,
+  .Contact {
+    height: auto;
+    min-height: 85vh;
+    padding: 40px 20px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
 }
